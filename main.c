@@ -3,7 +3,7 @@
 #include "pile.h"
 int main()
 {
-    pile p;
+    pile p = malloc(sizeof(pile));
     p = pile_vide();
     p = empiler(p,1);
     p = empiler(p,2);
