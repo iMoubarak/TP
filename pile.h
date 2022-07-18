@@ -4,3 +4,6 @@ typedef struct pile
     struct pile *suivant;
 }*pile;
 pile pile_vide();
+pile empiler(pile p , int e);
+pile depiler(pile p);
+void affichier_pile(pile p);
