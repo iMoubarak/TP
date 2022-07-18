@@ -35,3 +35,9 @@ void affichier_pile(pile p)
         p = p->suivant;
     }
 }
+pile nettoyer_pile(pile p);
+{
+    while (p != NULL)
+        p = depiler(p);
+    return p;
+}
